@@ -8,6 +8,7 @@
 # .tfvars .terraform & plan files
 *.plan
 *.terraform*
+*.plan*
 *.tfvars*
 *.txt*
 
