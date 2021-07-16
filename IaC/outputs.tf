@@ -25,3 +25,14 @@ output "ACR_ID" {
 output "client_id" {
   value = data.azurerm_client_config.current.tenant_id
 }
+
+############# AKS output ##############
+
+output "AKS_client_certificate" {
+  value = module.AKS_module.client_certificate
+}
+
+output "AKS_kube_config" {
+  sensitive = true
+  value = module.AKS_module.kube_config
+}

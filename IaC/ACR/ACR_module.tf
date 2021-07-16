@@ -7,6 +7,7 @@ resource "azurerm_container_registry" "acr-p1" {
   //georeplications = [var.acr_replica_location]
 }
 
+
 ########### ACR role Assignment ###########
 resource "azurerm_role_assignment" "acr-role" {
   scope = azurerm_container_registry.acr-p1.id
