@@ -2,7 +2,7 @@
 output "az_sub_id" {
   value = data.azurerm_subscription.aks_p1.id
 }
-/*
+
 output "az_sp_id" {
   value = data.azuread_service_principal.aks_sp.id
 }
@@ -24,4 +24,4 @@ output "ACR_ID" {
 
 output "client_id" {
   value = data.azurerm_client_config.current.tenant_id
-}*/
+}

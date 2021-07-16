@@ -24,16 +24,16 @@ provider "azurerm" {
 ###### AZ subscription #########
 data "azurerm_subscription" "aks_p1" {}
 ###### AZ SP account ##########
-/* data "azuread_service_principal" "aks_sp" {
+data "azuread_service_principal" "aks_sp" {
   application_id = var.adsp_id
-} */
+} 
 ############### RG Module ##################
 module "RG_module" {
   source      = "./RG"
   rg_prefix   = "${var.prefix}-rg"
   rg_location = var.location
 }
-/*
+
 ################ ACR Module ####################
 module "ACR_module" {
   source      = "./ACR"
@@ -42,8 +42,8 @@ module "ACR_module" {
   rg_location = module.RG_module.rg_location
   acr_sku     = var.acrsku
   princi_id   = data.azuread_service_principal.aks_sp.id
-}*/
+}
 
 ####################
 
-//data "azurerm_client_config" "current" {}
+data "azurerm_client_config" "current" {}

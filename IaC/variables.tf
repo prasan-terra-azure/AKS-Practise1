@@ -14,7 +14,7 @@ variable "prefix" {
   default = "AKS-P1"
 }
 
-/*
+
 ################ ACR Module ####################
 variable "acrname" {
   default = "AKSP1ACR"
@@ -26,5 +26,5 @@ variable "acrsku" {
 
 ################ ADSP Module ################
 variable "adsp_id" {
-  default = "384ab280-c505-4a5c-8013-895a18dfce0a"
-}*/
+  default = "902eb936-0ed9-479d-86a5-1e9c07c49395"
+}
