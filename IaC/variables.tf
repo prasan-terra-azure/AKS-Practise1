@@ -32,7 +32,7 @@ variable "adsp_id" {
 
 ################# AKS Module ###############
 variable "aks_cluster_name" {
-  default = "Practise1"
+  default = "AKSPractise1"
 }
 variable "node_name" {
   default = "prac1"
